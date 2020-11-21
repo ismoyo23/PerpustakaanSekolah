@@ -1,0 +1,68 @@
+.Card {
+  z-index: -4;
+  margin-top: -20px;
+  padding: 0;
+  margin-left: 68px;
+  border-left: 5px solid aqua;
+  font-size: 60px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+
+  border-radius: 5px;
+}
+
+.writer {
+  font-size: 30px;
+  margin-left: 13px;
+}
+
+.CardBody {
+  margin-right: 10px;
+  height: 20px;
+}
+
+.sidebar strong {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .writer {
+    font-size: 21px;
+    margin-left: 6px;
+  }
+
+  .Card {
+    z-index: -4;
+    margin-top: 19px;
+    padding: 0;
+    margin-left: 32px;
+    border-left: 5px solid aqua;
+    font-size: 60px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
+
+    border-radius: 5px;
+  }
+}
+
+.CardTable {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: scroll;
+  height: 480px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.CardTable .Search {
+  width: 200px;
+  margin-bottom: 20px;
+  margin-left: auto;
+}

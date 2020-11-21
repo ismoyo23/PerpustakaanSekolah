@@ -1,0 +1,57 @@
+.NavBar {
+  width: 100%;
+  background-color: #141414;
+  height: 57px;
+}
+
+.NavLink {
+  color: white !important;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5;
+  transition-property: color;
+}
+
+.logo {
+  width: 33px;
+  height: 33px;
+  margin-left: -6px;
+  border-radius: 50%;
+  border: 1px solid aqua;
+}
+
+.username {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.users {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 700px) {
+  .NavBar {
+    margin-left: 100%;
+    width: 100% !important;
+    background-color: black;
+    height: 57px;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+    position: absolute !important;
+  }
+
+  .NavLink {
+    color: white !important;
+    font-size: 20px;
+  }
+
+  .dropdown {
+    color: white;
+  }
+
+  .users {
+    background-color: white;
+    visibility: show;
+  }
+}

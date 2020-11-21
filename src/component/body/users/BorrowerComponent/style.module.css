@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Anton&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+.card {
+  box-shadow: 1px 3px 1px #9e9e9e;
+}
+
+.textHeader {
+  position: absolute;
+  margin-top: 140px;
+  margin-left: 90px;
+  font-size: 90px;
+  color: white;
+  font-family: "Alata", sans-serif;
+  font-family: "Anton", sans-serif;
+  font-family: "Russo One", sans-serif;
+}
+
+.textTitle {
+  color: white;
+  font-size: 40;
+  margin-top: 260px;
+  margin-left: 90px;
+  position: absolute;
+  width: 390px;
+  font-size: 20px;
+}
+
+.backgroundColorTransparent {
+  position: absolute;
+
+  background-color: black;
+  width: 100%;
+  height: 590px;
+  opacity: 0.4;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+.buttonImg {
+  margin-top: 340px;
+  margin-left: 90px;
+  color: black;
+  position: absolute;
+  width: 150px;
+}
+
+.textList {
+  text-align: center;
+  font-family: "Abril Fatface", cursive;
+}
+
+.textListTitle {
+  color: gray;
+  text-align: center;
+}
+
+.textNav {
+  margin-left: 12;
+  font-family: "Do Hyeon", sans-serif;
+}
+
+.navGenre {
+  overflow: auto;
+  white-space: nowrap;
+  width: 10px;
+}

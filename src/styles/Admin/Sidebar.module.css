@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Raleway:ital,wght@1,100&display=swap");
+.NavKu {
+  background-color: black;
+  width: 50px;
+}
+
+.NavLink {
+  height: 100%;
+  line-height: 35px;
+  font-size: 17px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.4s;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.NavLink:hover {
+  background-color: aqua;
+  color: white;
+}
+
+.NavLink i {
+  margin-right: 16px;
+}
+
+.sidebar {
+  height: 100%;
+  background: #141414;
+  box-shadow: 5px 0 5px -5px #333;
+  box-sizing: border-box;
+  width: 117%;
+  transition: all 0.9s;
+}
+
+.sidebar header {
+  font-size: 21px;
+  color: white;
+  text-align: center;
+  line-height: 55px;
+  background: #007acc;
+  user-select: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.ImgHeader {
+  margin-top: 20px;
+  border-radius: 20%;
+  width: 100px;
+  height: 100px;
+  margin-left: 74px;
+  border: 2px solid white;
+}
+
+.sideBarBtn {
+  z-index: 1;
+  position: fixed;
+  margin-left: 18px;
+  cursor: pointer;
+  transition: 0.5;
+  transition-property: color;
+}
+
+.sideBarBtn:hover {
+  color: aqua;
+}
+
+.username {
+  margin-top: 14px;
+  text-align: center;
+  color: white;
+  font-size: 23px;
+}
+
+.sidebar .imgBar {
+  height: 200px;
+  background: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+.position {
+  text-align: center;
+  color: white;
+  margin-top: -20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 11px;
+}
+
+.check {
+  margin-left: 300px;
+}
+
+.Col1 {
+  margin-right: 20%;
+}
+
+.Col2 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    position: fixed;
+    width: 75px;
+    height: 100%;
+    background: black;
+    box-shadow: 5px 0 5px -5px #333;
+    box-sizing: border-box;
+  }
+
+  .ImgHeader {
+    display: none;
+  }
+  .username {
+    display: none;
+  }
+
+  .sidebar header {
+    display: none;
+  }
+
+  .NavLink {
+    margin-left: -14px;
+    width: 90px;
+    height: 100%;
+    line-height: 35px;
+    font-size: 19px;
+    color: white;
+    transition: 0.4s;
+    border-top: 1px solid rgb(26, 25, 25);
+    border-bottom: 1px solid rgb(26, 25, 25);
+  }
+
+  .NavKu {
+    background-color: black;
+    width: 12px;
+    position: fixed;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .sidebar .imgBar {
+    display: none;
+  }
+}
+
+.sidebar12 {
+  margin-left: -250px;
+  transition: all 0.9s;
+}
+
+.navbar12 {
+  width: 50%;
+  margin-left: -34px;
+  transition: all 0.9s;
+}
+
+.navbar13 {
+  transition: all 0.9s;
+}
+
+.Dropdown {
+  height: 100%;
+  font-size: 17px;
+  color: white;
+  padding-left: 10px;
+  transition: 0.4s;
+  margin-left: 70px;
+  display: none;
+}
+
+.DropShow {
+  height: 100%;
+  font-size: 17px;
+  color: white;
+  transition: 0.9s;
+  padding-left: 10px;
+  margin-left: 40px;
+  display: block;
+}
+
+.Dropdown .titleDropdown {
+  margin-left: 10px;
+  color: white;
+}

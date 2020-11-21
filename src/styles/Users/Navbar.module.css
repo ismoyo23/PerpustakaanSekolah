@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Great+Vibes&family=Spectral:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Frank+Ruhl+Libre&family=Great+Vibes&family=Spectral:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Frank+Ruhl+Libre&family=Galada&family=Great+Vibes&family=Spectral:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crete+Round:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+.NavBar {
+  height: 54px;
+  background-color: "white";
+}
+
+.NavLink {
+  color: white !important;
+  font-size: 15px;
+}
+
+.NavBrand {
+  color: white !important;
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+}
+
+.LogoImg {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.TitleLib {
+  font-size: 20px;
+  font-family: "Bangers", cursive;
+
+  font-family: "Frank Ruhl Libre", serif;
+
+  font-family: "Great Vibes", cursive;
+
+  font-family: "Spectral", serif;
+}
+
+.FontTitle {
+  font-family: "Bangers", cursive;
+
+  font-family: "Frank Ruhl Libre", serif;
+
+  font-family: "Galada", cursive;
+
+  font-family: "Great Vibes", cursive;
+
+  font-family: "Spectral", serif;
+  font-size: 30px;
+}
+
+.IconBooks {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.NavItem {
+  font-family: "Roboto Slab", serif;
+}
+
+.SwiperWraper {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.headerBooks {
+  font-size: 32px;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Crete Round", serif;
+  margin-top: 14px;
+  margin-bottom: 9px;
+}
+
+.cardBody {
+  margin-top: 12px;
+}
+
+.imgCard {
+  width: 157px;
+  height: 200px;
+}
+
+.cardBody:hover .back {
+  bottom: 0;
+  height: 100%;
+}
+
+.back {
+  background-color: #008cba;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.text {
+  color: black;
+  font-size: 12px;
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.CartText {
+  color: black;
+  font-size: 12px;
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.SwiperWraper:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008cba;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.ModalBackGrond {
+  background-color: rgb(62, 89, 129) !important;
+}
+
+.IconModalColor {
+  color: white !important;
+  text-align: center;
+  font-size: 100px;
+}
+
+.TextHeader {
+  color: "white";
+  margin-top: 100;
+
+  font-size: 100;
+}
+
+.InputMedia {
+  border-top: 0;
+  border-bottom: 6px solid black;
+  background: none !important;
+  outline: none !important;
+  border: none !important;
+  outline: none !important;
+  border-bottom: 1px solid white !important;
+  color: white !important;
+}
+
+.ModalLogin {
+  width: 300px !important;
+}
+
+.ModalRegister {
+  background-color: rgb(62, 89, 129) !important;
+}
+
+.ImgSlide {
+  width: 100%;
+  height: 340px;
+}
+.iconMenu {
+  color: black;
+}
+.navbarIconHide {
+  visibility: hidden;
+  margin-left: 85%;
+  margin-top: -45px;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-size: 23px;
+}
+
+.navbarIconShow {
+  margin-left: 85%;
+  margin-top: -45px;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-size: 23px;
+}
+
+.cardProfile {
+  visibility: hidden;
+  width: 190px;
+  height: 120px;
+  border: 1px solid black;
+  position: absolute !important;
+  z-index: 1;
+  margin-left: 40%;
+  z-index: 3;
+  margin-top: 10px;
+  background-color: rgb(65, 34, 236) !important;
+}
+
+.visibilityShow {
+  visibility: visible;
+}
+
+.cardProfile i {
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+.cardProfile strong {
+  color: black;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+
+.cardProfile span .btnLogin {
+  margin-top: 10px;
+  height: 30px;
+  background-color: rgb(10, 209, 216);
+  border: 1px solid rgb(10, 209, 216);
+  border-radius: 1px;
+  margin-left: -8px;
+  color: white;
+  font-size: 11px;
+  width: 63px;
+}
+
+.cardProfile span .btnRegister {
+  margin-top: 10px;
+  height: 30px;
+  background-color: rgb(10, 209, 216);
+  border: 1px solid rgb(10, 209, 216);
+  border-radius: 1px;
+  margin-left: 40px;
+  margin-right: -10px;
+  color: white;
+  font-size: 11px;
+  width: 63px;
+}
+
+.userHide {
+  visibility: hidden !important;
+}
+
+.searchFormMobile {
+  width: 340px !important;
+  visibility: hidden;
+  position: absolute;
+}
+@media only screen and (max-width: 600px) {
+  .ImgSlide {
+    width: 100%;
+    height: 260px;
+  }
+
+  .searchFormMobile {
+    width: 340px !important;
+    visibility: visible;
+    position: relative;
+  }
+
+  .searchFormDeskop {
+    visibility: hidden;
+  }
+}

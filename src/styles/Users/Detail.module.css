@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+.CardImg{
+    width: 100%;
+    object-fit:cover;
+    height: 600px;
+    margin-top: -200px;
+}
+
+.CardTitle{
+    font-size: 30px;
+}
+
+.CardChild{
+    margin-top: -200px;
+    width: 200px;
+    height: 300px;
+
+}
+
+.Button{
+    margin-top: 10px;
+    color: white;
+    width: 110px;
+    margin-left: 30px;
+}
+
+.TextStatus{
+    font-family: 'Merriweather', serif;
+    color: green;
+}
+
+.CardModal{
+    width: 400px;
+}
+
+.ButtonPlus{
+    margin-top: 300px;
+    width:56px;
+}
+
+.TextStok{
+    margin-top: -9px;
+    font-family: 'Merriweather', serif;
+    color: green;
+}
