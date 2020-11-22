@@ -58,10 +58,10 @@ function BooksCrud(props) {
   let [stok, setStok] = useState("");
   let [Action, setAction] = useState("");
   let [ISBN, setISBN] = useState('')
-  let [classification, setClassification] =useState('')
+ 
   let [edition, setEdition] =useState('')
   let [TraceContents, setTraceContents] =useState('')
-  let [placePublication, setPlacePublication] = useState('')
+
   let [DiscriptionBook, setDiscriptionBook] =useState('')
   let [year, setYear] = useState('')
   let [bibiografi, setBibiografi] = useState('nill')
@@ -184,14 +184,14 @@ function BooksCrud(props) {
         setRak(data.rak);
         setIdGenre(data.id_genre);
         setISBN(data.ISBN);
-        setPlacePublication(data.placePublication);
+      
         setTraceContents(data.TraceContents);
         setEdition(data.edition);
         setDiscriptionBook(data.DiscriptionBook)
         setPublisher(data.publisher)
         setYear(data.year)
         setBibiografi(data.bibiografi)
-        setClassification(data.classification)
+    
         setNote(data.note)
         setNumberInvestaris(data.number_investaris)
         setCollation(data.collation)
@@ -213,7 +213,7 @@ function BooksCrud(props) {
   // Action Add Books
   let ActionBooks = (event) => {
     event.preventDefault();
-    if (id == "" || title == "" || rak == "" || stok == "" || idGenre == "" || idAuthor == "" || ISBN == "" || classification == "" || edition == "" || TraceContents == "" || DiscriptionBook == "" || placePublication == "" || publisher == "" || year == "" || bibiografi == "" || collation == "" || index == "" || note == "" || author2 == "" || numberInvestaris == "" || noPanggil1 == "" || noPanggil2 == "" || info1 == "" || info2 == "") {
+    if (id == "" || title == "" || rak == "" || stok == "" || idGenre == "" || idAuthor == "" || ISBN == ""  || edition == "" || TraceContents == "" || DiscriptionBook == "" || publisher == "" || year == "" || bibiografi == "" || collation == "" || index == "" || note == "" || author2 == "" || numberInvestaris == "" || noPanggil1 == "" || noPanggil2 == "" || info1 == "" || info2 == "") {
       Swal.fire({
         icon: "error",
         title: "Error",
@@ -230,11 +230,11 @@ function BooksCrud(props) {
       formData.append("id_genre", idGenre);
       formData.append("id_author", idAuthor);
       formData.append("isbn", ISBN)
-      formData.append("classification", classification)
+ 
       formData.append("edition", edition)
       formData.append("TraceContents", TraceContents)
       formData.append("DiscriptionBook", DiscriptionBook)
-      formData.append("placePublication", placePublication)
+    
       formData.append("publisher", publisher)
       formData.append("year", year)
       formData.append("bibiografi", bibiografi)
@@ -294,14 +294,14 @@ function BooksCrud(props) {
         setIdGenre("");
         setRak("");
         setISBN("");
-        setPlacePublication('');
+       
         setTraceContents('');
         setEdition('');
         setDiscriptionBook('')
         setPublisher('')
         setYear('')
         setBibiografi('')
-        setClassification('')
+        
         setNote('')
         setNumberInvestaris('')
         setCollation('')
@@ -632,26 +632,7 @@ function BooksCrud(props) {
                 type="text" id="exampleText" />
               </FormGroup>
 
-              <FormGroup>
-                <Label for="exampleEmail">Info Tambahan 1</Label>
-                <Input
-                  onChange={(e) => setClassification(e.target.value)}
-                  value={classification}
-                  type="text"
-                  id="exampleEmail"
-                  placeholder="Kualifikasi"
-                />
-              </FormGroup>
-
-              <FormGroup>
-                <Label for="exampleText">Info tambahan 2</Label>
-                <Input 
-                onChange={(e) => setPlacePublication(e.target.value)}
-                value={placePublication}
-                id="exampleEmail"
-                placeholder="Tempat rilis"
-                type="text" id="exampleText" />
-              </FormGroup>
+              
               
               
 
