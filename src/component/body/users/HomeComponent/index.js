@@ -104,6 +104,24 @@ function HomePage(props) {
     });
   };
 
+  let searchBarcode = (data) => (event) => {
+    event.preventDefault()
+    let SearchBooks =
+      search === undefined
+        ? ""
+        : `&search=${data}&field=id`;
+    let genre =
+      props.category == undefined
+        ? ""
+        : `&search=${props.category}&field=genre.name_genre`;
+    let SortBooks = props.sort == undefined ? `/?sort=ASC` : `/?sort=DESC`;
+    axios({
+      url: `${process.env.REACT_APP_URL}books${SortBooks}${SearchBooks}${genre}`,
+    }).then((response) => {
+      setDataBooks(response.data.data);
+    });
+  };
+
   let handleSearch = (event) => {
     event.preventDefault();
     if (search == "") {
@@ -143,17 +161,15 @@ function HomePage(props) {
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>Search Books</ModalHeader>
         <ModalBody>
-          <BarcodeScannerComponent
-            width={460}
-            onUpdate={(err, result) => {
-              if (result) setData(result.text);
-              else setData("Not Found");
-
-              if (result) {
-                handleSearch(result.text);
-              }
+            <BarcodeScannerComponent
+              width={500}
+              height={500}
+              onUpdate={(err, result) => {
+                if (result) searchBarcode(result.text)
+                else setData('Not Found')
             }}
           />
+    
         </ModalBody>
         <ModalFooter>
           <Button color="secondary" onClick={toggle}>
@@ -249,6 +265,17 @@ function HomePage(props) {
           </Collapse>
         </Navbar>
       </div>
+      <BarcodeScannerComponent
+            width={460}
+            onUpdate={(err, result) => {
+              if (result) setData(result.text);
+              else alert("not found");
+
+              if (result) {
+                console.log("text")
+              }
+            }}
+          />
       <div className="container" style={{ marginTop: 40 }}>
         <div data-aos="fade-up" style={{ marginBottom: 100 }}>
           <h1 className={styles.textList}>List Buku</h1>
