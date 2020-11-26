@@ -265,17 +265,7 @@ function HomePage(props) {
           </Collapse>
         </Navbar>
       </div>
-      <BarcodeScannerComponent
-            width={460}
-            onUpdate={(err, result) => {
-              if (result) setData(result.text);
-              else alert("not found");
-
-              if (result) {
-                console.log("text")
-              }
-            }}
-          />
+     
       <div className="container" style={{ marginTop: 40 }}>
         <div data-aos="fade-up" style={{ marginBottom: 100 }}>
           <h1 className={styles.textList}>List Buku</h1>
